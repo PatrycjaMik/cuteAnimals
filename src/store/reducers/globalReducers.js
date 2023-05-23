@@ -1,6 +1,6 @@
 const InitState = {
-  numberOfLikes: 12,
-  numberOfDislikes: 10,
+  numberOfLikes: 2,
+  numberOfDislikes: 1,
 };
 
 export const likesReducer = (state = InitState, action) => {
