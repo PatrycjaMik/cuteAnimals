@@ -5,7 +5,7 @@ const animals = [
     title: "kitty",
     img: "cute1.jpg",
     upvotes: 6,
-    downvotes: 0,
+    downvotes: 2,
   },
   {
     id: 2,
@@ -19,21 +19,21 @@ const animals = [
     title: "duck",
     img: "cute3.jpg",
     upvotes: 7,
-    downvotes: 1,
+    downvotes: 4,
   },
   {
     id: 4,
     title: "panda",
     img: "cute4.jpg",
-    upvotes: 7,
-    downvotes: 1,
+    upvotes: 8,
+    downvotes: 5,
   },
   {
     id: 5,
     title: "raccon",
     img: "cute5.jpg",
-    upvotes: 7,
-    downvotes: 1,
+    upvotes: 3,
+    downvotes: 2,
   },
 ];
 
