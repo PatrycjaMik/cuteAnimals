@@ -1,23 +1,20 @@
 import React from "react";
-import animals from "../mocks/db";
-import { Photo } from "../components/Photo";
+import Photo from "../components/Photo";
 import { useSelector } from "react-redux";
 
-export  function MainPage() {
-
-  const numberOfLikes = useSelector((state) => state.numberOfLikes);
-  const numberOfDislikes = useSelector((state) => state.numberOfDislikes);
+export function MainPage() {
+  const animals = useSelector((state) => state.animals);
 
   return (
-    <section>
-      <p>home page</p>
-      {animals.map((item) =>
-        (numberOfLikes - numberOfDislikes) > 0 && (
-          <div className="object" key={item.id}>
-            <Photo item={item} />
-          </div>
-     ) 
-     )}
+    <section className="mainPageBg">
+      {animals.map(
+        (item) =>
+          item.upvotes - item.downvotes < 5 && (
+            <div className="object" key={item.id}>
+              <Photo item={item} />
+            </div>
+          )
+      )}
     </section>
   );
 }

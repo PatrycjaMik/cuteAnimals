@@ -1,10 +1,12 @@
 import React from "react";
 
-export  function ErrorPage() {
+export function ErrorPage() {
   return (
-    <>
-      <h1>Ups</h1>
-      <h4>Something went wrong</h4>
-    </>
+    <section>
+      <div className="errorContainer">
+        <h1>Ups!</h1>
+        <h4>Something went wrong</h4>
+      </div>
+    </section>
   );
 }
