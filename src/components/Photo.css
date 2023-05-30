@@ -29,3 +29,13 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 340px) {
+  .wrapper {
+    padding: 10px;
+    max-width: 300px;
+  }
+  .object {
+    padding: 10px 0;
+  }
+}

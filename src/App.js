@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { TheCutest } from "./pages/TheCutest";
+import TheCutest from "./pages/TheCutest";
 import { ErrorPage } from "./pages/ErrorPage";
 import { MainPage } from "./pages/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
