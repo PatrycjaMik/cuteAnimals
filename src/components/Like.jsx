@@ -12,7 +12,7 @@ export default function Like({ animal }) {
 
   return (
     <>
-      <button onClick={incrementHandler}>
+      <button onClick={incrementHandler} type="button">
         <img src="arrowUp.png" alt="like" width="10px" height="10px" />
         <p>Like </p>
         <span>{animal.upvotes}</span>

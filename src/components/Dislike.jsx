@@ -11,7 +11,7 @@ export default function Dislike({ animal }) {
   };
   return (
     <div>
-      <button onClick={decrementHandler}>
+      <button onClick={decrementHandler} type="button">
         <img src="arrowDown.png" alt="like" width="10px" height="10px" />
         <p>Dislike</p>
         <span>{animal.downvotes}</span>
